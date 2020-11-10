@@ -28,3 +28,11 @@ memoizedAddTo80(5);
 
 // avoiding the global scope 
 
+let calculation = 0;
+function fibonacci(n){
+    calculation++;
+    if (n < 2){
+        return 2;
+    }
+    return fibonacci(n-1) + fibonacci(n-2);
+}
